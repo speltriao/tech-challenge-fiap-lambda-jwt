@@ -41,7 +41,7 @@ jobs:
       - name: Deploy to AWS Lambda
         run: |
           aws lambda update-function-code \
-            --function-name autenticacao-tech-challenge-lambda \
+            --function-name tech-challenge-lambda-jwt \
             --zip-file fileb://lambda_function.zip
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
