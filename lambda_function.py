@@ -1,6 +1,5 @@
 import json
 import jwt
-import datetime
 
 def lambda_handler(event, context):
     body = json.loads(event.get("body", "{}"))
