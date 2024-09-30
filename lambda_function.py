@@ -1,6 +1,7 @@
 import json
 import jwt
 import os
+import pg8000
 
 def lambda_handler(event, context):
     body = json.loads(event.get("body", "{}"))
